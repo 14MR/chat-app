@@ -1,8 +1,8 @@
 module.exports = {
-  url: 'http: //localhost',
-  port: process.env.PORT || 3030,
-  originUrl: 'http://localhost:3030',
-  mongoUrl: 'mongodb://localhost:27017/chat-app',
+  url: process.env.ROOT_URL,
+  port: process.env.PORT || 80,
+  originUrl: process.env.ROOT_URL,
+  mongoUrl: process.env.MONGO_URL,
   ISDEV: process.env.NODE_ENV !== 'production',
   emailer: {
     from: "Chat App <no-reply@chatapp.com>",
